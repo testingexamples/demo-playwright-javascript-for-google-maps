@@ -1,0 +1,25 @@
+# Demo Playwright JavaScript for Google Maps
+
+> A beginner-friendly Playwright + JavaScript demo that describes driving a
+> real Chromium browser against the real, live Google Maps website
+> (https://www.google.com/maps) and running three real assertion-based
+> checks, with canvas-aware, deliberately modest assertions. Google's Terms
+> of Service restrict automated querying of its services, so this repo's
+> code must never be executed against live google.com in CI or automated
+> tooling — see AGENTS.md.
+
+## Docs
+
+- [README](README.md): Install instructions, the Google ToS caution, and a summary of what the demo tests.
+- [Spec](spec/index.md): The exact three test scenarios, selectors, and expected strings, as the single source of truth.
+- [Agent instructions](AGENTS.md): Source-of-truth pointer and the non-negotiable against live execution.
+- [Citation](CITATION.cff): Citation metadata for this software.
+
+## Source
+
+- [demo.js](src/demo.js): The Playwright script that implements the three tests described in the spec.
+
+## Optional
+
+- [Google Maps](https://www.google.com/maps): The live website this demo describes testing against (do not automate against it).
+- [Live examples page](https://testingexamples.github.io/examples/google-maps/): The testingexamples.github.io page documenting the same caution and interaction pattern.

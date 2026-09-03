@@ -1,0 +1,59 @@
+{
+  "name": "demo-playwright-javascript-for-google-maps",
+  "summary": "A beginner-friendly Playwright + JavaScript demo that describes driving a real browser against the real, live Google Maps website, with canvas-aware, deliberately modest assertions. Must never be run against live google.com in CI or automated tooling.",
+  "description": "This demo describes using Playwright and JavaScript to drive a real Chromium browser to https://www.google.com/maps and run three real assertion-based checks: the page title, the URL after searching \"Cardiff Castle\", and the URL's embedded zoom-level number after clicking zoom in. Assertions are kept modest and honest because most of Google Maps renders to canvas/WebGL rather than to regular DOM elements. Written from documented knowledge of Google's well-known, stable accessible markup rather than live verification, because Google's Terms of Service restrict automated querying of its services.",
+  "repository": "https://github.com/testingexamples/demo-playwright-javascript-for-google-maps/",
+  "license": "MIT OR Apache-2.0 OR GPL-2.0-only OR GPL-3.0-only OR BSD-3-Clause",
+  "sections": [
+    {
+      "title": "Docs",
+      "links": [
+        {
+          "title": "README",
+          "url": "README.md",
+          "description": "Install instructions, the Google ToS caution, and a summary of what the demo tests."
+        },
+        {
+          "title": "Spec",
+          "url": "spec/index.md",
+          "description": "The exact three test scenarios, selectors, and expected strings, as the single source of truth."
+        },
+        {
+          "title": "Agent instructions",
+          "url": "AGENTS.md",
+          "description": "Source-of-truth pointer and the non-negotiable against live execution."
+        },
+        {
+          "title": "Citation",
+          "url": "CITATION.cff",
+          "description": "Citation metadata for this software."
+        }
+      ]
+    },
+    {
+      "title": "Source",
+      "links": [
+        {
+          "title": "demo.js",
+          "url": "src/demo.js",
+          "description": "The Playwright script that implements the three tests described in the spec."
+        }
+      ]
+    },
+    {
+      "title": "Optional",
+      "links": [
+        {
+          "title": "Google Maps",
+          "url": "https://www.google.com/maps",
+          "description": "The live website this demo describes testing against (do not automate against it)."
+        },
+        {
+          "title": "Live examples page",
+          "url": "https://testingexamples.github.io/examples/google-maps/",
+          "description": "The testingexamples.github.io page documenting the same caution and interaction pattern."
+        }
+      ]
+    }
+  ]
+}
